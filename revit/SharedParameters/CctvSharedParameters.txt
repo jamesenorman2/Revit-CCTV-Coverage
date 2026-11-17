@@ -1,0 +1,18 @@
+# This is a Revit shared parameter file.
+# Do not edit manually.
+*META	VERSION	MINVERSION
+META	2	1
+*GROUP	ID	NAME
+GROUP	1	CCTV
+*PARAM	GUID	NAME	DATATYPE	DATACATEGORY	GROUP	VISIBLE	DESCRIPTION	USERMODIFIABLE	HIDEWHENNOEXPRESSION
+PARAM	4e9e4fdd-19b0-42d8-a36d-f3ad5983b3b4	CCTV_HorizontalResolution	INTEGER		1	1	Sensor horizontal resolution in pixels, e.g. 1920 (stream actually recorded).	1	0
+PARAM	03772e97-c673-466a-8c6b-13e83e14ca35	CCTV_VerticalResolution	INTEGER		1	1	Sensor vertical resolution in pixels, e.g. 1080.	1	0
+PARAM	556fde01-a6c5-4cdb-acf4-f87cb8ae1f8e	CCTV_HFOV	ANGLE		1	1	Horizontal field of view at the chosen zoom (from datasheet).	1	0
+PARAM	43bfb44c-c9ce-4c31-b598-3eb4ac99b66a	CCTV_VFOV	ANGLE		1	1	Vertical field of view. Optional: derived from HFOV and aspect ratio if blank.	1	0
+PARAM	06baeaf3-3787-4972-bd13-6ceeb59424d6	CCTV_FocalLength	LENGTH		1	1	Optional: lens focal length (use when HFOV unknown).	1	0
+PARAM	b1655265-40fe-46cb-82df-74723aed2cd8	CCTV_SensorWidth	LENGTH		1	1	Optional: sensor active width (use with focal length).	1	0
+PARAM	293bf027-c0b3-4553-9641-61a9c441ecbc	CCTV_Tilt	ANGLE		1	1	Downward tilt from horizontal. 0 = level, 90 = straight down.	1	0
+PARAM	c65f50f8-5cce-4eac-acbe-03875968279e	CCTV_PanOffset	ANGLE		1	1	Optional extra pan added to the family facing direction (anticlockwise).	1	0
+PARAM	2c93edb3-0de4-4f55-8590-6171cf30ecdc	CCTV_FlipDirection	YESNO		1	1	Tick if the family's facing direction points opposite to the lens.	1	0
+PARAM	9f31e846-0d61-4041-bf6a-418718108119	CCTV_MountHeight	LENGTH		1	1	Optional: lens height above level. Blank = use instance elevation.	1	0
+PARAM	ac1d4c29-4197-44d2-8650-0c16b1e6d739	CCTV_RequiredDORI	TEXT		1	1	Operational requirement: Monitor, Detect, Observe, Recognise, Identify or Inspect.	1	0

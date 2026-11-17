@@ -1,0 +1,31 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CctvCoverage.Core", "src\CctvCoverage.Core\CctvCoverage.Core.csproj", "{FE9CB71D-43DD-41B8-8B7E-0507970896B1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CctvCoverage.Revit", "src\CctvCoverage.Revit\CctvCoverage.Revit.csproj", "{2DFBFED9-54B1-4A8D-ADC9-6DDDD30DA801}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CctvCoverage.Core.Tests", "tests\CctvCoverage.Core.Tests\CctvCoverage.Core.Tests.csproj", "{4702EDBB-C355-4A08-BAC6-9621BC7DB414}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE9CB71D-43DD-41B8-8B7E-0507970896B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE9CB71D-43DD-41B8-8B7E-0507970896B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE9CB71D-43DD-41B8-8B7E-0507970896B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE9CB71D-43DD-41B8-8B7E-0507970896B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DFBFED9-54B1-4A8D-ADC9-6DDDD30DA801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DFBFED9-54B1-4A8D-ADC9-6DDDD30DA801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DFBFED9-54B1-4A8D-ADC9-6DDDD30DA801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DFBFED9-54B1-4A8D-ADC9-6DDDD30DA801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4702EDBB-C355-4A08-BAC6-9621BC7DB414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4702EDBB-C355-4A08-BAC6-9621BC7DB414}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4702EDBB-C355-4A08-BAC6-9621BC7DB414}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4702EDBB-C355-4A08-BAC6-9621BC7DB414}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

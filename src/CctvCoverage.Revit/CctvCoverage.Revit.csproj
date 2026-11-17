@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!--
+    Revit add-in. Targets Revit 2026 (.NET 8).
+    Revit 2027 uses .NET 10: see docs/PLAN.md milestone M7 for multi-targeting.
+  -->
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <RootNamespace>CctvCoverage.Revit</RootNamespace>
+    <AssemblyName>CctvCoverage.Revit</AssemblyName>
+    <RevitVersion>2026</RevitVersion>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Reference-only Revit API assemblies; never copied to output. -->
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="2026.4.10" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="2026.4.10" ExcludeAssets="runtime" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CctvCoverage.Core\CctvCoverage.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CctvCoverage.addin" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="..\..\revit\SharedParameters\CctvSharedParameters.txt" Link="CctvSharedParameters.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

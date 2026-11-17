@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Pure geometry / standards maths. MUST NOT reference the Revit API. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>CctvCoverage.Core</RootNamespace>
+  </PropertyGroup>
+</Project>

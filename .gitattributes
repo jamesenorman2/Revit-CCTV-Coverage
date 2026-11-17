@@ -1,0 +1,4 @@
+* text=auto
+# Revit writes shared parameter files with CRLF; keep it that way.
+revit/SharedParameters/*.txt text eol=crlf
+*.sln text eol=crlf

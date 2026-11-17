@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copy this file AND CctvCoverage.Revit.dll + CctvCoverage.Core.dll to:
+    per-user (no admin):  %AppData%\Autodesk\Revit\Addins\2026\
+    all users (admin):    %ProgramData%\Autodesk\Revit\Addins\2026\
+  The Assembly path below is relative to this .addin file. See docs/DEPLOYMENT.md.
+-->
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>CCTV Coverage</Name>
+    <Assembly>CctvCoverage\CctvCoverage.Revit.dll</Assembly>
+    <AddInId>4fd2bebb-2f46-4d8d-8c25-e1d7f34ea133</AddInId>
+    <FullClassName>CctvCoverage.Revit.App</FullClassName>
+    <VendorId>CCTVCOVERAGE</VendorId>
+    <VendorDescription>CCTV coverage and EN 62676-4 DORI analysis</VendorDescription>
+  </AddIn>
+</RevitAddIns>
